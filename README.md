@@ -1,8 +1,13 @@
-# Mion Testing Procedure 
+# Mion Testing
 
-This repo is to contain information and scripts to run testing tools. 
+This repo serves two purposes: 
 
-Currently this is limited to `testing.md`, which documents how to enable the
-Yocto Project's Automated Runtime Testing and ptests. In the future, automated
-testing scripts and utilities will be added here, to make up a full testing
-suite.
+1. A home for snippets, scripts, and tools to assist with mion testing
+2. To store and track test results.
+
+During regular development, logs can be placed in `dev_<TEST TYPE>/` and named
+`<VENDOR>_<MACHINE>.log`. For testing release candidates, the folder names are
+`<CODE_NAME>_<TEST TYPE>/`. 
+
+Any scripts or tools should be placed in `utils/<NAME OF UTIL>/`. i.e.,
+`utils/foo_check/foo_check.sh`
